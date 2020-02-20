@@ -4,9 +4,12 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import  { IfprComponent } from'./ifpr/ifpr.component';
+import { TadsComponent } from'./tads/tads.component'
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent, IfprComponent,TadsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,21 +1,13 @@
-<h1>Hello World</h1>
-<h1 id="disciplina">Desenvolvimento para Dispositivos Móveis</h1>
-<h1 class="teste">Nome: Lucas Aparecido Da Silva Florentino</h1>
-<h1 class="teste">TADS</h1>
-<div id="pagina">
-<img src="https://futebolatino.lance.com.br/wp-content/uploads/2020/02/como-os-paraguaios-noticiaram-a-classificacao-do-guarani-sobre-o-corinthians-Futebol-Latino-13-02.jpg" alt="Furada">
-<table>
-<tr>
- <th>Disciplina</th>
- <th>Professor</th>
-</tr>
-<tr>
-  <td>Banco de Dados Avançado</td>
-  <td>Marcelo</td>
-</tr>
-<tr>
- <td>Desenvolvimento de Dispositivos Móveis</td>
- <td>Hélio</td>
-</tr>
-</table>
+<div class="container-fluid">
+  <header>
+    <nav class="navbar navbar-expand-md bg-info">
+      <a class="nav-link text-white" routerLink="/ifpr">IFPR</a>
+      <a class="nav-link text-white" routerLink="/tads">TADS</a>
+      <a class="nav-link text-white">ANGULAR</a>
+      <a class="nav-link text-white">TURMA</a>
+    </nav>
+  </header>
 </div>
+<router-outlet></router-outlet>
+<ifpr-component></ifpr-component>
+<tads-component></tads-component>
