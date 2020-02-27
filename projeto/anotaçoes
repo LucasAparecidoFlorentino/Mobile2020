@@ -1,0 +1,18 @@
+- saber os principais comandos npm
+ng new site
+ng serve -o
+npm install
+
+- estrutura do projeto
+src
+index
+component
+modulo
+
+- decorator - função
+
+<router-outlet></router-outlet>
+
+- capacidade de criar componentes
+
+- padrão de nomenclatura
