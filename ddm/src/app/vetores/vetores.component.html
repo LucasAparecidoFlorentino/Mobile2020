@@ -1,0 +1,43 @@
+<div class="container">
+  <form class="m-5">
+    <div class="row">
+      <div class="form-group">
+        <input class="form-control" type="text" [(ngModel)]="servico.estoque.nome" name="nome">
+      </div>
+
+      <div class="form-group">
+        <input class="form-control" type="text" name="quantidade" [(ngModel)]="servico.estoque.quantidade">
+      </div>
+      <div class="">
+        <button class="btn btn-info" type="button" name="button" (click)='adicionar()'>Adicionar</button>
+      </div>
+    </div>
+  </form>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Nome</th>
+        <th scope="col">Quantidade</th>
+        <th scope="col">Excluir</th>
+        <th scope="col">Alterar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let estoque of servico.listaEstoques; let i = index">
+        <td>{{estoque.nome}}</td>
+        <td>{{estoque.quantidade}}</td>
+        <td>
+        <button class="btn btn-info" type="button" name="button" (click)="excluir(i)">
+          <i class="fas fa-trash"></i>
+        </button>
+        </td>
+        <td>
+        <button class="btn btn-info" type="button" name="button" (click)="alterar(i)">
+          <i class="fas fa-edit"></i>
+        </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
